@@ -1,0 +1,70 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+        }
+        .navbar {
+            background-color: #BA0000;
+        }
+        .navbar-brand, .nav-link {
+            color: #FFFFFF !important;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        .btn-login {
+            background-color: #FFFFFF;
+            color: #000000;
+            border: 1px solid #000000;
+        }
+        .btn-cadastro {
+            background-color: #BA0000;
+            color: #FFFFFF;
+            border: none;
+        }
+        .hero {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #BFBFBF;
+        }
+        .hero h1 {
+            color: #BA0000;
+            font-size: 36px;
+        }
+        .hero button {
+            background-color: #BA0000;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+        .menu-section {
+            padding: 20px 0;
+        }
+        .menu-section h2 {
+            color: #BA0000;
+        }
+        .menu-card {
+            text-align: center;
+            padding: 15px;
+            background-color: #FFFFFF;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .menu-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .menu-card p {
+            color: #636363;
+        }
+        .footer {
+            background-color: #BFBFBF;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #BA0000;
+        }
+   
