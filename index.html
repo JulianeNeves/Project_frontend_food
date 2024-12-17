@@ -1,76 +1,261 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digitaliza Food</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Digitaliza Food</title>
+
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <img src="img/LOGOprincipal.svg" alt="Logotipo"  class="navbar-logo"/>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Início</a></li>
+          <li><a class="nav-link scrollto" href="#reservas">Reservas</a></li>
+          <li><a class="nav-link scrollto" href="#menu">Cardápio</a></li>
+          <li><a class="nav-link scrollto" href="#about">Sobre nós</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark">
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">digitalizaFood6@gmail.com</a>
+        <i class="bi bi-phone-fill phone-icon"></i><a href="https://wa.me/5513996662857">+55 (13)991234567 </a>
+      </div>
+      <div class="social-links d-none d-md-block">
+        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+  
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  <section id="hero">     
     <div class="container">
-        <img src="images/LOGO-white.png" alt="Logotipo" />
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Reservas</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Sobre nós</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-                <li class="nav-item"><button class="btn btn-cadastro">Cadastro</button></li>
-            </ul>
-        </div>
+      <h2 style="text-align: center; color: #ffffff; margin-bottom: 0px;"> Bem vindo ao </h2>
+      <h2 style="text-align: center; color: #BA0000; font-weight: bold;"> DIGITALIZA FOOD </h2>
+        <h2 style="width: 30%; color: #ffffff; margin-bottom: 0px;">Uma inovação</h2>
+        <h2 style="width: 30%; color: #BA0000;">culinária</h2>
+        <table style="width: 90%; border-spacing: 20px 0; color: #ffffff; ">
+          <tr>
+            <td style="text-align: left; font-weight: bold; font-style: italic;">
+              Descubra uma experiência culinária inesquecível, 
+              <br>
+              com pratos cuidadosamente preparados para surpreender 
+              <br>
+              o seu paladar. 
+              <br>
+              <br>
+              Nosso restaurante combina tradição e inovação, 
+              <br>
+              oferecendo sabores únicos em um ambiente acolhedor 
+              <br>
+              que encanta todos os sentidos.
+            </td>
+          </tr>
+        </table>
     </div>
-</nav>
+  </section>
 
-<!-- Hero Section -->
-<div class="hero">
-    <h1>Bem vindo ao <br> DIGITALIZA FOOD</h1>
-    <p>Uma inovação culinária!</p>
-    <button>RESERVE AQUI</button>
-</div>
+    <main id="main">
+      <section id="featured-portifólio" class="featured-menu section-bg">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-6 text-center">
+                <button class="btn btn-send text-white" type="button">
+                  <a href="reservations.html" style="text-decoration: none; color: inherit;">
+                    <i class="bx bx-restaurant"></i> Reserve aqui!
+                  </a>
+                </button>
+                <h5 class="description hover-effect mt-3">
+                  Garanta sua mesa agora mesmo! Clique no botão acima para realizar sua reserva com rapidez e praticidade.
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<!-- Menu Section -->
-<div class="container menu-section">
-    <h2 class="text-center">Explore nosso <span style="color: #BA0000;">Cardápio</span></h2>
-    <div class="row mt-4">
-        <div class="col-md-4">
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/150" alt="Menu Principal">
-                <h3>Menu Principal</h3>
-                <p>Picanha Grill<br>Risoto de Camarão<br>Frango Dijon</p>
+      <div class="container">
+ 
+      </div>
+
+      <section id="menu" class="menu" data-aos="fade-up" data-aos-delay="30">
+        <div class="container">
+          <div class="section-title">
+            <h2>Conheça nossa culinária</h2>
+            <p>Explore os deliciosos pratos e bebidas preparados com carinho para você. Temos uma variedade de opções para todos os gostos!</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="30">
+              <div class="icon-box">
+                <h4><a href="">Menu Principal</a></h4>
+                <center>
+                  <img class="menu-image" src="img/menu-principal.jpg" />
+                </center>
+                <p class="text-center">Picanha Grill<br>Risoto de Camarão<br>Frango Dijon<br>Costela BBQ<br>Tilápia Crocante<br>Sushi de Salmão<br>Yakissoba de Frango</p>
+              </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/150" alt="Launch Menu">
-                <h3>Launch Menu</h3>
-                <p>Burger Clássico<br>Wrap de Frango<br>Tacos TexMex</p>
+            <div class="col-lg-4 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="30">
+              <div class="icon-box">
+                <h4><a href="">Lunch Menu</a></h4>
+                <center>
+                  <img class="menu-image" src="img/lunch-menu.jpg" />
+                </center>
+                <p class="text-center">Burger Clássico<br>Wrap de Frango<br>Crocante Veggie<br>Tacos TexMex<br>Hot Dog Supreme<br>Sanduíche de Carne Louca<br>Salada Caesar</p>
+              </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="menu-card">
-                <img src="https://via.placeholder.com/150" alt="Menu Kids">
-                <h3>Menu Kids</h3>
-                <p>Mini Burguer<br>Nuggets Caseiros<br>Espaguete</p>
+            <div class="col-lg-4 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="30">
+              <div class="icon-box">
+                <h4><a href="">Menu Kids</a></h4>
+                <center>
+                  <img class="menu-image" src="img/menu-kids" />
+                </center>
+                <p class="text-center">Mini Burguer<br>Nuggets Caseiros<br>Espaguete<br>Pizza Mini<br>Peixinho Dourado<br>Macarrão com Queijo<br>Frango Empanado</p>
+              </div>
             </div>
+            <div class="col-lg-4 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="30">
+              <div class="icon-box">
+                <h4><a href="">Acompanhamentos</a></h4>
+                <center>
+                  <img class="menu-image" src="img/acompanhamentos.webp" />
+                </center>
+                <p class="text-center">Onion rings<br>Batata Rústica<br>Batata Frita<br>Molho Especial<br>Legumes Grelhados<br>Camarões empanados<br>Molho Cheddar</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="30">
+              <div class="icon-box">
+                <h4><a href="">Bebidas</a></h4>
+                <center>
+                  <img class="menu-image" src="img/bebidas.jpg" />
+                </center>
+                <p class="text-center">Limonada Suíça<br>Suco Tropical<br>Chá Gelado<br>Refrigerante<br>Água<br>Suco de Laranja Natural<br>Suco Verde</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="30">
+              <div class="icon-box">
+                <h4><a href="">Sobremesas</a></h4>
+                <center>
+                  <img class="menu-image" src="img/sobremesa.jpg" />
+                </center>
+                <p class="text-center">Petit Gâteau<br>Brownie<br>Torta de Morango<br>Pudim<br>Sorvete<br>Mousse de Chocolate<br>Cheesecake de Framboesa</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+      
+
+      <div class="container">
+        <hr class="custom-hr">
+      </div>
+
+      <section id="about" class="about" data-aos="fade-up" data-aos-delay="30">
+        <div class="container">
+          <div class="section-title">
+            <h2>Sobre o Digitaliza Food</h2>
+            <p>"Sua experiência gastronômica começa com a praticidade de uma reserva digital."</p>
+          </div>
+      
+          <div class="row" data-aos="fade-up" data-aos-delay="30">
+            <div class="col-lg-3 order-1 order-lg-2">
+              <img src="./img/restaurant.jpg" class="img-fluid rounded-circle" alt="Imagem do restaurante">
+            </div>        
+            <div class="col-lg-9 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="zoom-in" data-aos-delay="30">
+              <p>No Digitaliza Food, oferecemos uma experiência gastronômica inovadora, combinando os melhores sabores com a praticidade da tecnologia. Nosso foco é proporcionar uma refeição deliciosa e eficiente para nossos clientes, desde o pedido até a entrega.</p>
+              <p>No Digitaliza Food, acreditamos que a experiência gastronômica deve ser rápida, agradável e sem complicações. Pensando nisso, desenvolvemos uma plataforma fácil de usar, onde você pode fazer sua reserva com apenas alguns cliques, garantindo que sua mesa esteja pronta para recebê-lo no momento desejado.</p>
+              <p>Nosso sistema de reservas digitalizados permite que você escolha o melhor horário para sua visita, com toda a conveniência e sem a necessidade de chamadas telefônicas ou longas esperas.</p>
+              <p>Além disso, a experiência no Digitaliza Food vai além da reserva. Nossa equipe está sempre pronta para oferecer um atendimento de excelência, criando uma experiência única e memorável para você e seus convidados.</p>
+              <p>Com o Digitaliza Food, reservar uma mesa nunca foi tão simples e conveniente. Aproveite o melhor da gastronomia com a facilidade da tecnologia ao seu alcance.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact" data-aos="fade-up" data-aos-delay="30">
+        <div class="container">
+          <div class="section-title">
+            <h2>Contato</h2>
+            <p>
+              Estamos sempre prontos para ouvir você! Seja para realizar uma reserva, tirar dúvidas ou compartilhar sugestões, 
+              entre em contato conosco. Nossa equipe está à disposição para tornar sua experiência ainda mais especial. 
+              Preencha o formulário abaixo e responderemos o mais breve possível.
+            </p>
+          </div>
+      
+          <div class="row" data-aos-delay="30">
+            <div class="col-lg-12">
+              <form action="https://formsubmit.co/jonatan.ismael996@gmail.com" method="POST">
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label for="email">Seu E-mail</label>
+                    <input type="email" class="form-control" name="email" id="email" required>
+                  </div>
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="message">Mensagem</label>
+                  <textarea class="form-control" name="message" rows="10" required></textarea>
+                </div>
+                <br>
+                <center>
+                  <button class="text-center btn btn-send text-white" type="submit">Enviar mensagem</button>
+                </center>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>      
+      
+
+    </main>
+  </body>
+
+  <footer id="footer">
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <div class="container">
+      <h3>Digitaliza Food</h3>
+      <div class="social-links">
+        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Digitaliza Food</span></strong>
+      </div>
     </div>
-</div>
-
-<!-- Footer -->
-<div class="footer">
-    <p>Início | Reservas | Quem Somos</p>
-    <p>Nos encontre nas redes sociais</p>
-    <p>&copy; 2024 Digitaliza Food</p>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <span id="visit-count"></span>
+  </footer>
 </html>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/js/main.js"></script>
